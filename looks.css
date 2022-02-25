@@ -1,0 +1,65 @@
+body{
+    display: grid;
+    grid-template-columns: 30vw 68vw;
+    grid-template-rows: 8vh auto auto;
+    grid-row-gap: 6px;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+.header{
+    background-color: wheat;
+    color: gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 2;
+}
+header{
+    grid-area: 1/1/span1/span2;
+    position: fixed;
+    width: 99%;
+}
+main{
+    grid-area: 2/1/span1/span1;
+    margin: 1%;
+    background-color: whitesmoke;
+    width: 99%;
+    height: auto;
+
+    text-align: center;
+}
+#our_products{
+    margin: 22%;
+    padding-top: 10%;
+}
+footer{
+    grid-area: 3/1/span1/span1;
+    margin: 1%;
+    background-color: gray;
+    width: 99%;
+}
+.navigation{
+    background-color: black;
+    color: wheat;
+    padding: 5px;
+    height: 4%;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 2;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bolder;
+}
+h3{
+    color: gray;
+}
+h2{
+    color: gray;
+}
+@media screen and (max-width:350px) {
+    img{
+        height: 95%;
+    }
+}
